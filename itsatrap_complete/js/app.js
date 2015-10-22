@@ -1,3 +1,3 @@
-//Hide Warning
-//Show Warning Slowly
-$(".warning").hide().show("slow");
+function showButton() {
+	$(".warning").hide().show("slow");
+}
