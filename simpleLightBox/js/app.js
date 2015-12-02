@@ -17,8 +17,11 @@ $("#imageGallery a").click(function(event) {
   var imagePath = $(this).attr("href");
   //update overlay with the selected image
   $image.attr("src", imagePath);
-
+  //show overlay
   $overlay.show();
+  //show img alt text
+  var altText = $(this).children("img").attr("alt");
+  $caption.text(altText);
 });
 
 //hide overlay when you click again
