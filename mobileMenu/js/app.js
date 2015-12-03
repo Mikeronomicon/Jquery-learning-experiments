@@ -21,11 +21,17 @@ $("#menu a").each(function() {
   $select.append($option);
 });
 
-//create button
-var $button = $("<button>Go</button>");
-$("#menu").append($button);
-//bind click to button
-$button.click(function() {
-  //go to select's location
+//bind change listener to selection
+$select.change(function() {
   window.location = $select.val();
-});
+})
+
+// this is the dumb way to navigate
+//create button
+// var $button = $("<button>Go</button>");
+// $("#menu").append($button);
+// //bind click to button
+// $button.click(function() {
+//   //go to select's location
+//   window.location = $select.val();
+// });
