@@ -16,3 +16,12 @@ $("#menu a").each(function() {
   //append option to select menu
   $select.append($option);
 });
+
+//create button
+var $button = $("<button>Go</button>");
+$("#menu").append($button);
+//bind click to button
+$button.click(function() {
+  //go to select's location
+  window.location = $select.val();
+});
