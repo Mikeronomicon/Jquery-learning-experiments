@@ -9,6 +9,4 @@ function passwordEvent() {
   }
 }
 
-$("#password").focus(passwordEvent).keyup(function() {
-
-})
+$("#password").focus(passwordEvent).keyup(passwordEvent);
